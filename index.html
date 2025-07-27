@@ -16,8 +16,26 @@
     <!-- ----------------------------- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="w-full bg-emerald-950">
+    <div id="content-container">
+        <div id="web-intro">
+            <h1 class="block">Generate your <br><span>Random Password</span></h1>
+        </div>
+        <div id="generate-container">
+            <input id="input" type="text" placeholder="Password">
+            <button id="copy-btn">
+                <i class="ri-file-copy-line"></i>
+            </button>
+        </div>
+        <div id="btn-container">
+            <button id="generate-btn">
+                <div id="btn-icon">
+                    <i class="ri-lightbulb-flash-fill"></i>
+                </div>
+                <p id="btn-text">Generate</p>
+            </button>
+        </div>
+    </div>
     <!-- ----------------------------- script -->
     <script src="./js/script.js"></script>
 </body>
