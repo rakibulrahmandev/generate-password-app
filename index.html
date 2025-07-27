@@ -16,24 +16,27 @@
     <!-- ----------------------------- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="w-full bg-emerald-950">
-    <div id="content-container">
-        <div id="web-intro">
-            <h1 class="block">Generate your <br><span>Random Password</span></h1>
+<body class="w-full bg-emerald-950 font-montserrat">
+    <div id="content-container" class="m-[12%]">
+        <div id="web-intro" class="space-y-5">
+            <h1 class="block text-5xl text-white">Generate Your</h1>
+            <span class="text-6xl text-yellow-500 relative font-medium before:absolute before:w-full before:h-1 before:bg-yellow-500 before:-bottom-2">Random Password</span>
         </div>
-        <div id="generate-container">
-            <input id="input" type="text" placeholder="Password">
-            <button id="copy-btn">
-                <i class="ri-file-copy-line"></i>
-            </button>
-        </div>
-        <div id="btn-container">
-            <button id="generate-btn">
-                <div id="btn-icon">
-                    <i class="ri-lightbulb-flash-fill"></i>
-                </div>
-                <p id="btn-text">Generate</p>
-            </button>
+        <div class="mt-[50px] space-y-6">
+            <div id="generate-container" class="w-[60%] max-w-[650px] h-[80px] bg-white rounded-lg flex items-center justify-between">
+                <input id="input" type="text" placeholder="Password" autocomplete="off" readonly spellcheck="false" class="h-full flex-1 rounded-tl-lg rounded-bl-lg pl-5 text-xl placeholder:text-gray-400 font-normal outline-none border-none">
+                <button id="copy-btn" class="h-full p-6">
+                    <i class="ri-file-copy-line text-2xl text-emerald-950"></i>
+                </button>
+            </div>
+            <div id="btn-container" class="w-full">
+                <button id="generate-btn" class="bg-yellow-500 flex items-center justify-center gap-1 py-3 px-5 rounded-md">
+                    <div id="btn-icon">
+                        <i class="ri-lightbulb-flash-fill text-4xl text-white"></i>
+                    </div>
+                    <p id="btn-text" class="text-xl font-medium text-white">Generate</p>
+                </button>
+            </div>
         </div>
     </div>
     <!-- ----------------------------- script -->
