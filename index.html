@@ -16,14 +16,14 @@
     <!-- ----------------------------- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="w-full bg-emerald-950 font-montserrat relative">
-    <div id="content-container" class="m-[12%]">
+<body class="w-full h-screen bg-emerald-950 font-montserrat relative flex items-center pl-[12%]">
+    <div id="content-container" class="w-full">
         <div id="web-intro" class="space-y-5">
             <h1 class="block text-5xl text-white">Generate Your</h1>
             <span class="text-6xl text-yellow-500 relative font-medium before:absolute before:w-full before:h-1 before:bg-yellow-500 before:-bottom-2">Random Password</span>
         </div>
         <div class="mt-[50px] space-y-6">
-            <div id="generate-container" class="w-[60%] max-w-[650px] h-[80px] bg-white rounded-lg flex items-center justify-between">
+            <div id="generate-container" class="w-[60%] max-w-[600px] h-[80px] bg-white rounded-lg flex items-center justify-between">
                 <input id="input" type="text" placeholder="Password" autocomplete="off" readonly spellcheck="false" class="h-full flex-1 rounded-tl-lg rounded-bl-lg pl-5 text-xl placeholder:text-gray-400 font-normal outline-none border-none">
                 <button id="copy-btn" class="h-full p-6">
                     <i class="ri-file-copy-line text-2xl text-yellow-500 cursor-pointer"></i>
@@ -39,8 +39,8 @@
             </div>
         </div>
     </div>
-    <div class="absolute -bottom-full right-8">
-        <p class="text-sm text-white opacity-20">Developed by Rakibul Rahman &copy; 2025</p>
+    <div class="absolute bottom-8 right-8">
+        <p class="text-sm text-white opacity-30">Developed by Rakibul Rahman &copy; 2025</p>
     </div>
 
     <!-- ----------------------------- script -->
